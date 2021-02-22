@@ -1,0 +1,15 @@
+For Creating branch on git:
+	git checkout -b review/ishita_files
+	git add scripts/resources/myfiles/
+	git commit -m "Updated python file"
+	git push origin review/ishita_files
+
+For setup branch on jenkins:
+	Create you branch (e.g. review/ishita_new) and push your changes as above.
+	
+For resolving MERGE conflicts:
+	git merge --abort
+	git checkout master
+	git branch -d <branchname>
+	git fetch --all
+	git checkout <branchname>
