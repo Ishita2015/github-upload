@@ -17,6 +17,7 @@ For resolving MERGE conflicts:
 
 Setup ===============================================================================================================================	
 
+Open commands prompt at: C:\Users\ishita_nigam\.ssh and run below command to generate RSA key.
 ssh-keygen -t rsa -C ishita.nigam@gmail.com
 add id_rsa.pub content to the ssh keys in gitlab settings under ssh keys.
 
@@ -27,5 +28,4 @@ You need to tell Git to use SSH protocol instead of HTTPS. On the repository pag
 Then run the following command in your working tree to tell Git to use this URL instead of the current one:
 
 git remote set-url origin git@github.com:Ishita2015/github-upload.git
-
 
