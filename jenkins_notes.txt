@@ -13,3 +13,19 @@ For resolving MERGE conflicts:
 	git branch -d <branchname>
 	git fetch --all
 	git checkout <branchname>
+
+
+Setup ===============================================================================================================================	
+
+ssh-keygen -t rsa -C ishita.nigam@gmail.com
+add id_rsa.pub content to the ssh keys in gitlab settings under ssh keys.
+
+Now, you can clone:
+git clone -b master git@github.com:Ishita2015/github-upload.git
+
+You need to tell Git to use SSH protocol instead of HTTPS. On the repository page on GitHub, select Clone or Download and Use SSH. You will get a URL for the SSH protocol in the form git@github.com:<user>/<repo>.git.
+Then run the following command in your working tree to tell Git to use this URL instead of the current one:
+
+git remote set-url origin git@github.com:Ishita2015/github-upload.git
+
+
