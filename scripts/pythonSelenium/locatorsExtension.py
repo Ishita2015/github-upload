@@ -9,4 +9,6 @@ driver.find_element_by_xpath("//input[@name='rememberUn']").click()
 # driver.find_element_by_name('Login').click()
 driver.find_element_by_link_text('Forgot Your Password?').click()
 driver.find_element_by_xpath("//a[text()='Cancel']").click()
-driver.find_element_by_xpath("//form[@name='login']/div[1]/label")
+print(driver.find_element_by_xpath("//form[@name='login']/div[1]/label").text)
+print(driver.find_element_by_css_selector("form[name='login'] label:nth-child(3)").text)
+

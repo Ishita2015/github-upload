@@ -9,6 +9,7 @@ driver.get('https://rahulshettyacademy.com/angularpractice/')
 driver.find_element_by_css_selector("input[name = 'name']").send_keys('Ishita')
 driver.find_element_by_name('email').send_keys('ishitademo@gmail.com')
 driver.find_element_by_id('exampleCheck1').click()
+
 dropdown = Select(driver.find_element_by_id("exampleFormControlSelect1"))
 dropdown.select_by_visible_text('Female')
 dropdown.select_by_index(0)
@@ -16,5 +17,9 @@ dropdown.select_by_index(0)
 driver.find_element_by_xpath("//input[@id='inlineRadio2']").click()
 driver.find_element_by_xpath("//input[@type='submit']").click()
 str = driver.find_element_by_class_name('alert-success').text
+
+
+
+
 print(str)
 
