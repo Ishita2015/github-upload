@@ -7,11 +7,12 @@ driver = webdriver.Firefox(executable_path="C:\\Users\\ishita_nigam\\IdeaProject
 driver.maximize_window()
 # get method to hit url on browser
 driver.get("https://www.cerence.com/home")
-
+driver.get("https://www.nuance.com/omni-channel-customer-engagement/voice-and-ivr/text-to-speech.html#!")
 print(driver.title)
 print(driver.current_url)
 driver.get("https://www.cerence.com/about")
-driver.minimize_window()
+#driver.minimize_window()
 driver.back()
+driver.forward()
 driver.refresh()
-driver.close()
+driver.quit()
