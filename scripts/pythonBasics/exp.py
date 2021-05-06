@@ -29,10 +29,14 @@
 # # for i in range(-1, -2):
 # #     print("#")
 # #
-# # tup = [1,2,4,8]
-# # tup = tup[1:-1]
-# # tup = tup[0]
-# # print(tup)
+tup = [1,2,4,8]
+#tup = tup[1:-1]
+# tup = tup[3:-2]
+# print(tup)
+print('sMITH' > 'Smithhs')
+print('21' < '18')
+# tup = tup[0]
+# print(tup)
 # #
 # # mylist = [[0, 1, 2, 3] for i in range(2)]
 # # print(mylist[0][1])
@@ -47,23 +51,23 @@
 # # z,y,z = x,y,z
 # # print(x,y,z)
 # #
-# # from platform import platform, machine, processor, system, version
+from platform import platform, machine, processor, system, version
+
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+print(machine())
+print(processor())
+print(system())
+print(version())
 # #
-# # print(platform())
-# # print(platform(1))
-# # print(platform(0, 1))
-# # print(machine())
-# # print(processor())
-# # print(system())
-# # print(version())
-# #
-# # from platform import python_implementation, python_version_tuple
-# #
-# # print(python_implementation())
-# #
-# # for atr in python_version_tuple():
-# #     print(atr)
-# #
+from platform import python_implementation, python_version_tuple
+
+print(python_implementation())
+
+for atr in python_version_tuple():
+    print(atr)
+
 # # for ch in "abc123XYX":
 # #     if ch.isupper():
 # #         print(ch.lower(), end='')
@@ -95,4 +99,12 @@ print(list)
 x = "\\\\"
 print(len(x))
 
+try:
+    print('5'/0)
+except ArithmeticError:
+    print('arith')
+except:
+    print('some')
+
+print(float("1.3"))
 

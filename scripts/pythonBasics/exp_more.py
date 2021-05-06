@@ -1,16 +1,16 @@
-# class A:
-#     A = 1
-#     def __init__(self, v=2):
-#         self.v = v + A.A
-#         A.A += 1
-#
-#     def set (self, v):
-#         self.v += v
-#         A.A += 1
-#         return
-# a = A()
-# a.set(2)
-# print(a.v)
+class A:
+    A = 1
+    def __init__(self, v=2):
+        self.v = v + A.A
+        A.A += 1
+
+    def set (self, v):
+        self.v += v
+        A.A += 1
+        return
+a = A()
+a.set(2)
+print(a.v)
 #
 # x = """
 # """
@@ -40,20 +40,27 @@
 #         print('a')
 
 # i = 4
-# while i <= 4:
+# while i > 4:
+# #while i <= 4:
 #     i -= 2
 #     print('*')
 #     if i == 2:
 #         break
 # else:         # execute when while condition is false
 #     print("ishi")
-#
-# class A:
-#     def __init__(self, v):
-#         self.__a = v + 1
-#
-# a = A(0)
-# print(a.__a)
+
+class A:
+    def __init__(self, v):
+        self.__a = v + 1
+
+ab = A(0)
+
+print(A.__name__)
+print(ab._A__a)
+print(A.__bases__)
+print(A.__module__)
+print(A.__dict__)
+
 #
 # list = [1,2,3,4]
 # print(list[-3:-2])
@@ -130,3 +137,41 @@
 # os.mkdir("my_directory")
 # print(len(os.listdir()))
 #
+# numbers = [i*i for i in range(5)]
+# foo = list(filter(lambda x: x%2, numbers))
+# print(foo)
+#
+# print('ABc' > 'CAB')
+# print('True' != True)
+
+class A():
+    def __init__(self):
+        self.var1 = 0
+class B(A):
+    var = 1
+class C(A):
+    var = 2
+class D(B,C):
+    # def __init__(self):
+    #     super().__init__()
+        pass
+
+d = D()
+print(d.var, d.var1)
+
+s1 = 'dog cat rat'
+s2 = s1.split()
+print(len(s2))
+print(s2)
+print(s2[-4:1])
+
+class Ex(Exception):
+    def __init__(self, msj):
+        Exception.__init__(self, msj + msj)
+        self.args = (msj,)
+try:
+    raise Ex('ex')
+except Ex as e:
+    print(e)
+except Exception as e:
+    print(e)

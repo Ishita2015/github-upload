@@ -3,7 +3,7 @@ from selenium.webdriver.support.select import Select
 
 driver = webdriver.Chrome(executable_path="C:\\Users\\ishita_nigam\\IdeaProjects\\chromedriver.exe")
 driver.maximize_window()
-driver.get('http://gh-srvapp04/murmur/#/overview')
+driver.get('https://www.amazon.com/')
 
 #driver.find_element_by_class_name('md-primary').click()
 # driver.find_element_by_css_selector("input[name = 'name']").send_keys('Ishita')
