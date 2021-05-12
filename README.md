@@ -1,1 +1,1 @@
-This is my project.
+A repository for Python projects.
