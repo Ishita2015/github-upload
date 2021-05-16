@@ -176,7 +176,7 @@
 # except Exception as e:
 #     print(e)
 
-from math import *
+from cmath import *
 
 # x = log(1099511627777,2)
 x = log(1125899906842623,2)

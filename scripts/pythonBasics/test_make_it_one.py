@@ -1,4 +1,4 @@
-from scripts.pythonBasics import make_it_one
+import make_it_one
 import unittest
 
 
