@@ -1,1 +1,1 @@
-A repository for Python projects.
+A repository for Python scripts.
